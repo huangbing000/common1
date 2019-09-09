@@ -26,6 +26,31 @@ import com.huangbing.common.utils.StringUtil;
 public class StringUtilTest {
 
 	/**
+	 * 测试toHtml工具类
+	 */
+	@Test
+	public void testToHtml() {
+		String str = "测试HTML工具类"+"\r\n"+"周四胃口圣诞节";
+		String html = StringUtil.toHtml(str);
+		System.out.println(html);
+	}
+	/**
+	 * 测试是否是手机号
+	 */
+	@Test
+	public void testIsPhoneNumber() {
+		boolean b = StringUtil.isPhoneNumber("17835693564");
+		System.out.println(b);
+	}
+	/**
+	 * 测试是否是邮箱
+	 */
+	@Test
+	public void testIsEmail() {
+		boolean b = StringUtil.isEmail("qww2619252@qq.com");
+		System.out.println(b);
+	}
+	/**
 	 * Test method for {@link com.huangbing.common.utils.StringUtil#hasLength(java.lang.String)}.
 	 */
 	@Test
